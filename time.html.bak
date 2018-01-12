@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="time.css" />
+    <script src="jquery-3.0.0.min.js"></script>
+    <script src="time.js"></script>
+    <script type="text/javascript" language="javascript" src="jquery.dotdotdot.js"></script>
+
+</head>
+<body>
+
+<div class="flowChart"></div>
+
+</body>
+<script>
+    var jsonArr = [
+        {time:'09:00',value:'访问A页面访问A页面访问A页面访问A页面访问A页面访问A页面访问A页面访问A页面访问A页面访问A页面访问A页面访问A页面访问A页面'},
+        {time:'09:30',value:'访问B页面 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\n '},
+        {time:'09:50',value:'登录'},
+        {time:'10:00',value:'退出'},
+        {time:'10:10',value:'登录'},
+        {time:'10:20',value:'退出'},
+        {time:'10:50',value:'访问B页面'},
+        {time:'10:50',value:'访问B页面'},
+        {time:'10:50',value:'访问B页面'}
+    ];
+    timeAxis(jsonArr);
+</script>
+</html>

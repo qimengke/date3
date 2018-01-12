@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="time.css" />
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="time.js"></script>
+    <script type="text/javascript" language="javascript" src="jquery.dotdotdot.js"></script>
+
+</head>
+<body>
+
+<div class="flowChart"></div>
+
+</body>
+<script>
+    var jsonArr = [
+        {time:'09:00',value:'2005年8月，John Resig提议改进Prototype的“Behaviour”库，于是他在blog上发表了自己的想法，并用了3个例子做简单的流程说明。'},
+        {time:'09:30',value:'2006年1月John Resig等人创建了jQuery；8月，jQuery的第一个稳定版本，并且已经支持CSS选择符、事件处理和AJAX交互。 '},
+        {time:'09:50',value:'2007年7月，jQuery 1.1.3版发布，这次小版本的变化包含了对jQuery选择符引擎执行速度的显著提升。从这个版本开始，jQuery的性能达到了Prototype、Mootools以及Dojo等同类JavaScript库的水平。同年9月，jQuery 1.2版发布，它去掉了对XPath选择符的支持，原因是相对于CSS语法它已经变得多余了。这一版能够对效果进行更为灵活的定制，而且借助新增的命名空间事件，也使插件开发变得更容易。同时，jQuery UI项目也开始启动，这个新的套件是作为曾经流行但已过时的Interface插件的替代项目而发布的。jQuery UI中包含大量预定义好的部件（widget），以及一组用于构建高级元素（例如可拖放、拖拽、排序）的工具。'},
+        {time:'10:00',value:'2008年5月，jQuery 1.2.6版发布，这版主要是将Brandon Aaron开发的流行的Dimensions插件的功能移植到了核心库中，同时也修改了许多BUG，而且有不少的性能得到提高。'},
+        {time:'10:10',value:'2009年1月，jQuery 1.3版发布，它使用了全新的选择符引擎Sizzle，在各个浏览器下全面超越其他同类型JavaScript框架的查询速度，程序库的性能也因此有了极大提升。这一版本的第2个变化就是提供live()方法，使用live()方法可以为当前及将来增加的元素绑定事件，在1.3版之前，如果要为将来增加的元素绑定事件，需要使用livequery插件，而在1.3版中，可以直接用live()方法。'},
+        {time:'10:20',value:'2010年1月，也是jQuery的四周年生日，jQuery 1.4版发布，为了庆祝jQuery四周岁生日，jQuery团队特别创建了jquery14.com站点，带来了连续14天的新版本专题介绍。'},
+        {time:'10:50',value:'2010年2月，jQuery 1.4.2版发布，它新增了有关事件委托的两个方法：delegate()和undelegate()。delegate()用于替代1.3.2中的live()方法。这个方法比live()来的方便，而且也可以达到动态添加事件的作用。'},
+        {time:'10:50',value:'jQuery中内置了一系列的动画效果，可以开发出非常漂亮的网页，许多网站都使用jQuery的内置的效果，比如淡入淡出、元素移除等动态特效。'},
+        {time:'10:50',value:'jQuery提供了各种页面事件，它可以避免程序员在HTML中添加太事件处理代码，最重要的是，它的事件处理器消除了各种浏览器兼容性问题。'}
+    ];
+    timeAxis(jsonArr);
+</script>
+</html>
